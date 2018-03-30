@@ -1,7 +1,7 @@
 text: Lato, #000000
 text-strong: Lato Bold, #000000
 text-emphasis: Lato Light Italic
-<!-- Use Courier theme -->
+theme: Courier, 1
 
 # [fit]Intro to Python 🐍
 
@@ -57,6 +57,7 @@ def get_random_number():
 ```
 
 ---
+[.build-lists: true]
 
 # Lists vs. sets
 
@@ -87,6 +88,7 @@ print(my_set)  # Output: {'b', 'a'}
 ```
 
 ---
+[.build-lists: true]
 
 # Why use sets?
 
@@ -230,6 +232,7 @@ from words import get_random_word
 ```
 
 ---
+[.build-lists: true]
 
 # [fit]How can we adjust game difficulty?
 
@@ -350,6 +353,7 @@ On each turn, the player inputs a string.
 # [fit]this input satisfy?
 
 ---
+[.build-lists: true]
 
 # Conditions
 
