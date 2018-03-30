@@ -142,13 +142,13 @@ The first transaction in any block is the coinbase transaction. Through this, th
 
 # [fit]Block rewards
 
-The block reward was *initially 50 BTC*.
+The block reward was *initially 50 BTC*.[^1]
 
 The block reward halves every 210,000 blocks. Therefore, the maximum number Bitcoins that can ever exist is *21,000,000*.
 
 Currently, the block reward is *12.5 BTC*. The next reward halving is expected to happen on May 31, 2020.
 
-Source: http://www.bitcoinblockhalf.com/
+[^1]: http://www.bitcoinblockhalf.com/
 
 ---
 
@@ -162,11 +162,12 @@ Many miners will select transactions with the highest transaction fees first.
 
 # [fit]Drawbacks to proof of work
 
-- *Environmentally unfriendly*: Bitcoin miners consume over 160 million KWh of electricity daily—enough to power over 5.4 million US households for a day!
-- *Undemocratic*: The best application-specific integrated circuits (ASICs) outperform the best GPUs by a factor of 1000. ASICs can cost over $2000 each!
+- *Environmentally unfriendly*: Bitcoin miners consume over 160 million KWh of electricity daily—enough to power over 5.4 million US households for a day![^1]
+- *Undemocratic*: The best application-specific integrated circuits (ASICs) outperform the best GPUs by a factor of 1000. ASICs can cost over $2000 each![^2]
 
-Source: https://digiconomist.net/bitcoin-energy-consumption
-https://en.bitcoin.it/wiki/Mining\_hardware\_comparison
+[^1]: https://digiconomist.net/bitcoin-energy-consumption
+
+[^2]: https://en.bitcoin.it/wiki/Mining\_hardware\_comparison
 
 ---
 
