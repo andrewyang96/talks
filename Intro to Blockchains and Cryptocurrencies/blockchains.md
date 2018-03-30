@@ -1,4 +1,4 @@
-theme: Work, 1
+theme: Work, 3
 
 ![](ethereum-bitcoin.jpg)
 
@@ -159,6 +159,49 @@ Transactions that don't immediately become a part of the next block are stored i
 Many miners will select transactions with the highest transaction fees first.
 
 ---
+
+<br/><br/><br/><br/><br/><br/>
+# [fit]How can bad actors
+# [fit]attack the blockchain?
+
+---
+
+# [fit]Double spending
+
+Remember that transactions must consume UTXOs. The same output cannot be spent twice!
+
+However, a bad actor could get lucky and guess the nonce quickly. This is unlikely to happen multiple times in a row, though.
+
+Best practice is to *wait for at least one block confirmation* before spending your Bitcoin. Exchanges wait for at least six confirmations.
+
+---
+
+# [fit]51% (majority) attack
+
+A 51% attack occurs when a bad actor controls the majority of the network's hashrate. If that happens, the bad actor is likely to be able to control the blockchain.
+
+With major cryptocurrencies like Bitcoin, **this is not a problem!**
+
+The hashrates are just too high, and the bad actors would be better off financially if they used their hashrate to mine.
+
+---
+
+# [fit]Altering past blocks
+
+The bad actor would need to have *far more hashrate than the entire network combined!*
+
+The bad actor would have to "redo" the work in finding nonces for spoofed blocks and would never catch up to the rest of the network!
+
+This is why the blockchain can be considered irreversible.
+
+---
+
+<br/><br/><br/><br/><br/><br/>
+# [fit]Sounds great!
+# [fit]What are the drawbacks?
+
+---
+[.build-lists: true]
 
 # [fit]Drawbacks to proof of work
 
