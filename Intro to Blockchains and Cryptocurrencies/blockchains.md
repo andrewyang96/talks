@@ -1,4 +1,4 @@
-theme: Work, 3
+theme: Work, 1
 
 ![](ethereum-bitcoin.jpg)
 
@@ -35,7 +35,7 @@ theme: Work, 3
 
 A digital, distributed ledger in which transactions are publicly recorded.
 
-Invented by Satoshi Nakamoto for use in Bitcoin.
+Invented by *Satoshi Nakamoto* (true identity unknown) for use in Bitcoin.
 
 ---
 [.build-lists: true]
@@ -122,6 +122,8 @@ The blockchain is secured with the proof of work (PoW) consensus algorithm.
 
 Also used in Ethereum, Litecoin, ZCash, Monero, and other cryptocurrencies!
 
+![inline](logos/btc.png)![inline](logos/eth.png)![inline](logos/ltc.png)![inline](logos/xmr.png)![inline](logos/zec.png)
+
 ---
 
 # [fit]What is proof of work?
@@ -182,15 +184,15 @@ A 51% attack occurs when a bad actor controls the majority of the network's hash
 
 With major cryptocurrencies like Bitcoin, **this is not a problem!**
 
-The hashrates are just too high, and the bad actors would be better off financially if they used their hashrate to mine.
+The hashrates are just too high, and any bad actors would be better off financially if they used their hashrate to mine.
 
 ---
 
 # [fit]Altering past blocks
 
-The bad actor would need to have *far more hashrate than the entire network combined!*
+A bad actor would need to have *far more hashrate than the entire network combined!*
 
-The bad actor would have to "redo" the work in finding nonces for spoofed blocks and would never catch up to the rest of the network!
+A bad actor would have to "redo" the work in finding nonces for spoofed blocks and would never catch up to the rest of the network!
 
 This is why the blockchain can be considered irreversible.
 
@@ -219,17 +221,96 @@ This is why the blockchain can be considered irreversible.
 # [fit]consensus algorithms?
 
 ---
+[.build-lists: true]
 
-# [fit]Alternative consensus mechanisms
+# [fit]Alternative consensus mechanisms[^1]
 
 - Proof of stake (PoS)
 - Delegated proof of stake (DPoS)
 - Byzantine fault tolerance (BFT)
 
+[^1]: https://hackernoon.com/an-overview-of-cryptocurrency-consensus-algorithms-9d744289378f
+
+---
+[.build-lists: true]
+
+# [fit]Proof of stake consensus
+
+- Instead of mining, the network requires participants to *stake a portion of their coins* to verify transactions.
+- For each block, a "minter" is usually selected *in proportion to how much they staked*.
+- Bad behavior is punished by having the bad actor's stake taken away.
+- Not yet proven effective on a major cryptocurrency, although Ethereum is planning on using PoS in its Casper update.
+
+---
+[.build-lists: true]
+
+# [fit]Attacks on proof of stake
+
+- *Sybil attack*: A bad actor forges many identities to try to gain control of the network. If the chance of being selected as the "minter" is proportional to the amount staked, this is **not possible**.
+- *51% attack*: A bad actor must buy a majority of the supply to carry out this attack. Depending on the market cap of the cryptocurrency, this could be **extremely difficult**.
+
+---
+[.build-lists: true]
+
+# [fit]Delegated proof of stake
+
+- Participants *vote* for a set of delegates to serve the role of validating transactions.
+- Each participant's vote is proportional to the amount in their wallets.
+- The more votes a delegate has, the higher chance they will be selected to mint a block.
+- Used in Lisk and Ark.
+
+---
+[.build-lists: true]
+
+# [fit]PoS versus DPoS
+
+- **PoS is to direct democracy as DPoS is to representative democracy.**
+- DPoS tends to be more centralized than PoS, but it's also *more scalable*.
+
 ---
 
+# [fit]Byzantine fault tolerance
+
+- Each validator manages the state of the blockchain and share messages between each other to arrive at a correct transaction record.
+- Can be *extremely scalable* if done correctly, but can also be *extremely centralized*.
+- Used in NEO, Ripple, and Stellar.
+
+---
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 # [fit]What is Ethereum?
 
 ---
 
+# [fit]What is Ethereum?
+
+Ethereum is a blockchain-based distributed computing platform. The name of the cryptocurrency on the Ethereum platform is *ether*.
+
+The platform provides a Turing-complete virtual machine to run *smart contracts*.
+
+It was invented by a team led by *Vitalik Buterin* in 2014.
+
+---
+
+# [fit]What are smart contracts?
+
+Smart contracts are scripts that move assets around based on coded logic.
+
+Their source codes are accessible to anyone with access to the Ethereum blockchain.
+
+Smart contracts can be used to back insurance policies, claim assets, among other use cases.
+
+---
+
+# [fit]What are ERC-20 tokens?
+
+ERC-20 is an Ethereum token standard for smart contracts.
+
+ERC-20 defines a *common interface*—a common set of functions that any ERC-20 compliant contract must implement.
+
+Anyone interacting with ERC-20 compliant contracts won't have to write custom code for each contract.
+
+---
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 # [fit]How do I access my cryptocurrency?
