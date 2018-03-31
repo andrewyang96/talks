@@ -20,8 +20,8 @@ theme: Work, 1
 # [fit]What to expect from this talk
 
 - A high-level overview of how blockchains work
-- How to buy Bitcoin, Ethereum, and other cryptocurrencies
 - How to store your Bitcoin, Ethereum, etc.
+- How to buy Bitcoin, Ethereum, and other cryptocurrencies
 - Good resources to learn more about cryptocurrencies
 
 ---
@@ -298,7 +298,18 @@ Smart contracts are scripts that move assets around based on coded logic.
 
 Their source codes are accessible to anyone with access to the Ethereum blockchain.
 
-Smart contracts can be used to back insurance policies, claim assets, among other use cases.
+Smart contracts can be used to back insurance policies, claim assets, crowdfund projects (ICOs), among other use cases.
+
+---
+
+# [fit]How are transaction fees handled in Ethereum?
+
+The more computations a smart contract requires, the more *gas* it uses. Gas prices are expressed in *Gwei* where **1 ether == 10^9 Gwei**.
+Gas prices typically range from 1 Gwei up to 50 Gwei.
+
+A typical transaction costs 21000 gas. Suppose you set the gas price to 5 Gwei. Then, the transaction fee would cost 0.000105 ether.
+
+Interacting with smart contracts consumes more gas than simple transactions of ether.
 
 ---
 
@@ -314,3 +325,72 @@ Anyone interacting with ERC-20 compliant contracts won't have to write custom co
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 # [fit]How do I access my cryptocurrency?
+
+---
+
+# [fit]How do I access my cryptocurrency?
+
+You can access your cryptocurrency through a *wallet*.
+
+A wallet stores your private keys.
+The term "wallet" would be misnomer—think of a cryptocurrency wallet as a *keychain* that holds your private keys.
+
+All wallets are either cold (offline) or hot (connected to the Internet).
+Cold wallets are more secure than hot wallets.
+
+---
+[.build-lists: true]
+
+# [fit]What are the different types of wallets?
+
+- *Web wallet*: Webapps. Check to make sure you own your private keys, and use 2FA!
+- *Desktop wallet*: Downloaded and used on laptops and PCs. Easy to access and can be used offline.
+- *Mobile wallet*: Downloaded and used as a smartphone app. Watch out for scams!
+- *Paper/physical wallet*: Private and public keys are printed or engraved.
+- *Hardware wallet*: Small, portable devices that store your private keys. These keys never leave your device!
+
+---
+
+# [fit]If you own "a lot" of cryptocurrencies,
+# [fit]you should use a hardware wallet!
+
+I recommend the Ledger Nano S.
+Buy one here (affiliate link):
+[https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s](https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s)
+
+---
+
+# [fit]What are public and private keys?
+
+A public key identifies your wallet—anyone with access to the blockchain can view your activity.
+
+A private key grants the holder the rights to spend the cryptocurrency.
+
+If you lose your private key, **you lose access to your money!**
+
+If someone else knows your private key, **your money will be stolen!**
+
+---
+
+# [fit]How can I backup my wallet?
+
+When you first use a wallet, it may ask you to write down a mnemonic series of words. **Do that immediately and store it in a secure place!**
+
+If you lose access to your wallet, you can restore it with this series of words.
+Your backup words can derive your seed using the *BIP-39 standard*, which can derive your private keys for all your cryptocurrencies.
+
+---
+
+# [fit]Public key vs. public address
+
+A public key can derive many public addresses.
+
+Wallets with support for hierarchical deterministic wallets described in BIP-32 support this feature.
+
+Reusing public addresses can compromise your privacy.
+
+---
+
+![inline](key-relations.png)
+
+---
