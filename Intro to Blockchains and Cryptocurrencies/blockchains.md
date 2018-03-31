@@ -255,9 +255,10 @@ This is why the blockchain can be considered irreversible.
 # [fit]Delegated proof of stake
 
 - Participants *vote* for a set of delegates to serve the role of validating transactions.
-- Each participant's vote is proportional to the amount in their wallets.
-- The more votes a delegate has, the higher chance they will be selected to mint a block.
+- Each participant's vote is proportional to the amount in their wallets. The more votes a delegate has, the higher chance they will be selected to mint a block.
 - Used in Lisk and Ark.
+
+![inline](logos/lsk.png)![inline](logos/ark.png)
 
 ---
 [.build-lists: true]
@@ -274,6 +275,8 @@ This is why the blockchain can be considered irreversible.
 - Each validator manages the state of the blockchain and share messages between each other to arrive at a correct transaction record.
 - Can be *extremely scalable* if done correctly, but can also be *extremely centralized*.
 - Used in NEO, Ripple, and Stellar.
+
+![inline](logos/neo.png)![inline](logos/xrp.png)![inline](logos/xlm.png)
 
 ---
 
@@ -323,8 +326,9 @@ Anyone interacting with ERC-20 compliant contracts won't have to write custom co
 
 ---
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-# [fit]How do I store & access my cryptocurrency?
+<br/><br/><br/><br/><br/><br/><br/><br/>
+# [fit]How do I store & access
+# [fit]my cryptocurrency?
 
 ---
 
@@ -446,3 +450,55 @@ Examples include Shapeshift.io, Changelly, and Changenow.io.
 
 > **If you control the keys, it’s your Bitcoin. If you don’t control the keys, it’s not your Bitcoin.**
 -- Andreas Antonopoulos
+
+---
+
+<br/><br/><br/><br/><br/>
+# [fit]I am overwhelmed...
+# [fit]Where can I learn more
+# [fit]about cryptocurrencies?
+
+---
+
+# [fit]Online resources for learning
+
+- [Andreas Antonopoulos on YouTube](https://www.youtube.com/channel/UCJWCJCWOxBYSi5DhCieLOLQ)
+- [Jackson Palmer on YouTube](https://www.youtube.com/channel/UCTOzxu_HvuJfZtTJ6AZ7rkA)
+- [Crypto Tips on YouTube](https://www.youtube.com/channel/UCavTvSwEoRABvnPtLg0e6LQ)
+- [Unchained podcast](http://unchainedpodcast.co/)
+- [/r/CryptoTechnology](https://www.reddit.com/r/CryptoTechnology/)
+- [Lots of articles on Medium tagged "cryptocurrency"](https://medium.com/tag/cryptocurrency)
+
+---
+
+# [fit]Online resources for news
+
+- [Doug Polk on YouTube](https://www.youtube.com/channel/UC4sS8q8E5ayyghbhiPon4uw)
+- [Ivan on Tech on YouTube](https://www.youtube.com/user/LiljeqvistIvan)
+- [Boxmining on YouTube](https://www.youtube.com/channel/UCxODjeUwZHk3p-7TU-IsDOA)
+- [David Hay on YouTube](https://www.youtube.com/user/DavidHaydotOrg)
+- [Crypto Bobby on YouTube](https://www.youtube.com/channel/UCt_oM56Ui0BCCgi0Yc-Wh3Q)
+- [The Merkle](https://themerkle.com/)
+- [Coincentral](https://coincentral.com/)
+- [Coin Talk podcast](https://player.fm/series/coin-talk)
+
+---
+
+![](twitter.png)
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+# [fit]Follow notable people on Twitter who
+# [fit]are involved in cryptocurrencies!
+
+---
+
+# [fit]Additional resources[^1]
+
+- Sign up for Binance:
+[https://www.binance.com/?ref=17651721](https://www.binance.com/?ref=17651721)
+- Exchange with Changenow.io:
+[https://changenow.io?link_id=51f14cfa38ee10](https://changenow.io?link_id=51f14cfa38ee10)
+- Buy the Ledger Nano S hardware wallet:
+[https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s](https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s)
+
+[^1]: These links are affiliate links.
