@@ -324,11 +324,11 @@ Anyone interacting with ERC-20 compliant contracts won't have to write custom co
 ---
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-# [fit]How do I access my cryptocurrency?
+# [fit]How do I store & access my cryptocurrency?
 
 ---
 
-# [fit]How do I access my cryptocurrency?
+# [fit]How do I store & access my cryptocurrency?
 
 You can access your cryptocurrency through a *wallet*.
 
@@ -394,3 +394,55 @@ Reusing public addresses can compromise your privacy.
 ![inline](key-relations.png)
 
 ---
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+# [fit]How do I buy cryptocurrencies?
+
+---
+[.build-lists: true]
+
+# [fit]How do I buy cryptocurrencies?
+
+You can buy cryptocurrencies like Bitcoin and Ethereum on *exchanges*.
+
+There are three types of exchanges...
+
+---
+
+# [fit]Fiat-to-crypto exchanges
+
+These exchanges allow you to deposit or withdraw US dollars, euros, or other fiat currencies, and exchange them for cryptocurrencies.
+
+Usually you can also deposit or withdraw cryptocurrencies, too.
+
+Examples include Coinbase/GDAX, Gemini, Poloniex, and Kraken.
+
+---
+
+# [fit]Crypto-to-crypto exchanges
+
+These exchanges allow you to deposit, withdraw, and trade only cryptocurrencies. This is usually to avoid regulations associated with handling fiat currencies.
+
+Examples include Binance, Bittrex, and Kucoin.
+
+---
+
+# [fit]Coin swap services
+
+
+These services allow you to exchange cryptocurrencies anonymously. The only information you have to give is a public address and a refund address.
+
+Unlike the other two types of exchanges, coin swap services never hold your cryptocurrencies. Thus, they are *non-custodial*.
+
+Examples include Shapeshift.io, Changelly, and Changenow.io.
+
+---
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+# [fit]Do not keep a significant amount
+# [fit]of money on any exchange!
+
+---
+
+> **If you control the keys, it’s your Bitcoin. If you don’t control the keys, it’s not your Bitcoin.**
+-- Andreas Antonopoulos
