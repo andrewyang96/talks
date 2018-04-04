@@ -118,7 +118,7 @@ Credit: https://bitzuma.com/posts/five-ways-to-lose-money-with-bitcoin-change-ad
 
 # [fit]How is the blockchain secured?
 
-The blockchain is secured with the proof of work (PoW) consensus algorithm.
+The blockchain is secured with the *proof of work* (PoW) consensus algorithm.
 
 Also used in Ethereum, Litecoin, ZCash, Monero, and other cryptocurrencies!
 
@@ -126,9 +126,41 @@ Also used in Ethereum, Litecoin, ZCash, Monero, and other cryptocurrencies!
 
 ---
 
+<br/><br/><br/><br/><br/><br/><br/><br/>
+# [fit]But first, what is
+# [fit]a hash function?
+
+---
+
+# [fit]What is a hash function?
+
+A hash function maps data of arbitrary size to data of fixed size.
+
+The output of a hash function looks random, but is actually deterministic.
+
+```
+SHA256("Facebook") ==
+d41f5b4977ee05c6b61b3b5f054784628f5cd1cbe06a82a5484d1e6de6eefe85
+
+SHA256("Face🅱️ook") ==
+07fd5cce19bc1786c7bc5288c24316be1408ede5ec6fafe7b4bf4cd6a39bde42
+```
+
+---
+
+# [fit]What is a hash function?
+
+A *cryptographic hash function* must also be infeasible to invert.
+
+If `x` and `y` are arbitrary inputs and `h` is a hash function, it should be infeasible to find `h(x) == h(y)` where `x ≠ y`.
+
+Bitcoin uses a *cryptographic hash function* called *SHA-256*.
+
+---
+
 # [fit]What is proof of work?
 
-In order to *mine* a block, you have to collect transactions and find a block nonce via brute-force such that *the hash of the block starts with a certain number of zeros*.
+In order to *mine* a block, miners have to collect transactions and find a block nonce (an arbitrary integer) via brute-force such that *the hash of the block starts with a certain number of zeros*.
 
 The number of zeros required is the mining difficulty. It is self-adjusting so that *the average block time is 10 minutes*.
 
@@ -159,6 +191,10 @@ Currently, the block reward is *12.5 BTC*. The next reward halving is expected t
 Transactions that don't immediately become a part of the next block are stored in the miner's *mempool*.
 
 Many miners will select transactions with the highest transaction fees first.
+
+In the Bitcoin network, the transaction fee is approximately 0.00013 BTC (or $1) as of April 2018.[^2]
+
+[^2]: https://bitinfocharts.com/comparison/bitcoin-transactionfees.html
 
 ---
 
@@ -207,12 +243,12 @@ This is why the blockchain can be considered irreversible.
 
 # [fit]Drawbacks to proof of work
 
-- *Environmentally unfriendly*: Bitcoin miners consume over 160 million KWh of electricity daily—enough to power over 5.4 million US households for a day![^1]
-- *Undemocratic*: The best application-specific integrated circuits (ASICs) outperform the best GPUs by a factor of 1000. ASICs can cost over $2000 each![^2]
+- *Environmentally unfriendly*: Bitcoin miners consume over 160 million KWh of electricity daily—enough to power over 5.4 million US households for a day![^3]
+- *Undemocratic*: The best application-specific integrated circuits (ASICs) outperform the best GPUs by a factor of 1000. ASICs can cost over $2000 each![^4]
 
-[^1]: https://digiconomist.net/bitcoin-energy-consumption
+[^3]: https://digiconomist.net/bitcoin-energy-consumption
 
-[^2]: https://en.bitcoin.it/wiki/Mining\_hardware\_comparison
+[^4]: https://en.bitcoin.it/wiki/Mining\_hardware\_comparison
 
 ---
 
@@ -223,13 +259,13 @@ This is why the blockchain can be considered irreversible.
 ---
 [.build-lists: true]
 
-# [fit]Alternative consensus mechanisms[^1]
+# [fit]Alternative consensus mechanisms[^5]
 
 - Proof of stake (PoS)
 - Delegated proof of stake (DPoS)
 - Byzantine fault tolerance (BFT)
 
-[^1]: https://hackernoon.com/an-overview-of-cryptocurrency-consensus-algorithms-9d744289378f
+[^5]: https://hackernoon.com/an-overview-of-cryptocurrency-consensus-algorithms-9d744289378f
 
 ---
 [.build-lists: true]
@@ -358,9 +394,20 @@ Cold wallets are more secure than hot wallets.
 # [fit]If you own "a lot" of cryptocurrencies,
 # [fit]you should use a hardware wallet!
 
-I recommend the Ledger Nano S.
+I recommend the **Ledger Nano S**.
+
 Buy one here (affiliate link):
 [https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s](https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s)
+
+---
+
+# [fit]How can I access my Ethereum tokens?
+
+The most popular option is *MyEtherWallet.com*. It is a web interface that is *compatible with hardware wallets* like the Ledger Nano S.
+
+Another popular option is *Metamask*. It is available as an extension for the Chrome, Firefox, and Opera browsers.
+
+![inline](myetherwallet.png)![inline](metamask.png)
 
 ---
 
@@ -438,7 +485,7 @@ These services allow you to exchange cryptocurrencies anonymously. The only info
 
 Unlike the other two types of exchanges, coin swap services never hold your cryptocurrencies. Thus, they are *non-custodial*.
 
-Examples include Shapeshift.io, Changelly, and Changenow.io.
+Examples include Shapeshift.io, Changelly, and ChangeNow.io.
 
 ---
 
@@ -457,6 +504,14 @@ Examples include Shapeshift.io, Changelly, and Changenow.io.
 # [fit]I am overwhelmed...
 # [fit]Where can I learn more
 # [fit]about cryptocurrencies?
+
+---
+
+# [fit]Mastering Bitcoin by Andreas Antonopoulos
+
+Read for free: [https://github.com/bitcoinbook/bitcoinbook](https://github.com/bitcoinbook/bitcoinbook)
+
+![inline](mastering-bitcoin.jpg)
 
 ---
 
@@ -492,13 +547,18 @@ Examples include Shapeshift.io, Changelly, and Changenow.io.
 
 ---
 
-# [fit]Additional resources[^1]
+# [fit]Additional resources & affiliate links
 
+- Sign up for Coinbase:
+[https://www.coinbase.com/join/5ac1c3130379bf01ddb0e376](https://www.coinbase.com/join/5ac1c3130379bf01ddb0e376)
 - Sign up for Binance:
 [https://www.binance.com/?ref=17651721](https://www.binance.com/?ref=17651721)
-- Exchange with Changenow.io:
+
+---
+
+# [fit]Additional resources & affiliate links
+
+- Swap coins with ChangeNow.io:
 [https://changenow.io?link_id=51f14cfa38ee10](https://changenow.io?link_id=51f14cfa38ee10)
 - Buy the Ledger Nano S hardware wallet:
 [https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s](https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s)
-
-[^1]: These links are affiliate links.
