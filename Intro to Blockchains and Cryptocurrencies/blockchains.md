@@ -169,7 +169,9 @@ Also used in Ethereum, Litecoin, ZCash, Monero, and other cryptocurrencies!
 
 In order to *mine* a block, miners have to collect transactions and find a block nonce (an arbitrary integer) via brute-force such that *the hash of the block starts with a certain number of zeros*.
 
-The number of zeros required is the mining difficulty. It is self-adjusting so that *the average block time is 10 minutes*.
+The number of preceding zeros required in the block hash is the mining difficulty.
+
+The mining difficulty self-adjusts so that *the average block time is 10 minutes*.
 
 ---
 
@@ -237,7 +239,7 @@ A bad actor would need to have *far more hashrate than the entire network combin
 
 A bad actor would have to "redo" the work in finding nonces for spoofed blocks and would never catch up to the rest of the network!
 
-This is why the blockchain can be considered irreversible.
+This is why the blockchain can be considered virtually irreversible.
 
 ---
 
@@ -251,7 +253,7 @@ This is why the blockchain can be considered irreversible.
 # [fit]Drawbacks to proof of work
 
 - *Environmentally unfriendly*: Bitcoin miners consume over 160 million KWh of electricity daily—enough to power over 5.4 million US households for a day![^3]
-- *Undemocratic*: The best application-specific integrated circuits (ASICs) outperform the best GPUs by a factor of 1000. ASICs can cost over $2000 each![^4]
+- *Undemocratic*: The arms race for higher hashrate leads many miners to buy specialized hardware, which outperform the best GPUs by a factor of 1000 and can cost over $2000 each![^4]
 
 [^3]: https://digiconomist.net/bitcoin-energy-consumption
 
@@ -344,7 +346,7 @@ Smart contracts are scripts that move assets around based on coded logic.
 
 Their source codes are accessible to anyone with access to the Ethereum blockchain.
 
-Smart contracts can be used to back insurance policies, claim assets, crowdfund projects (ICOs), among other use cases.
+Smart contracts can be used to back insurance policies, verify supply chains, crowdfund projects (initial coin offerings), among other use cases.
 
 ---
 
@@ -422,11 +424,11 @@ Cold wallets are more secure than hot wallets.
 
 # [fit]What are the different types of wallets?
 
-- *Web wallet*: Webapps. Check to make sure you own your private keys, and use 2FA!
+- *Web wallet*: Webapps that let you interact with the blockchain. **Make sure to use 2FA!**
 - *Desktop wallet*: Downloaded and used on laptops and PCs. Easy to access and can be used offline.
 - *Mobile wallet*: Downloaded and used as a smartphone app. Watch out for scams!
 - *Paper/physical wallet*: Private and public keys are printed or engraved.
-- *Hardware wallet*: Small, portable devices that store your private keys. These keys never leave your device!
+- *Hardware wallet*: Small, portable devices that store your keys. **Your private keys never leave your device!**
 
 ---
 
