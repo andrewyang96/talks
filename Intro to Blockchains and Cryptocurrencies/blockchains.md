@@ -35,6 +35,8 @@ theme: Work, 1
 
 A digital, distributed ledger in which transactions are publicly recorded.
 
+Blockchains are usually secured by *cryptographic hash functions*.
+
 Invented by *Satoshi Nakamoto* (true identity unknown) for use in Bitcoin.
 
 ---
@@ -42,10 +44,10 @@ Invented by *Satoshi Nakamoto* (true identity unknown) for use in Bitcoin.
 
 # [fit]Properties of the blockchain
 
-- *Replicated & decentralized*: Every full node has a copy of the blockchain, and there's no central authority
-- *Trustless & verifiable*: Don't have to trust other nodes, any computer with the necessary software can verify the correctness of the blockchain
-- *Censorship-resistant*: Bad actors cannot prevent valid transactions from being processed
-- *Irreversible*: Transactions are irreversible except under very specific conditions
+- *Replicated & decentralized*: Every full node has a copy of the blockchain, and there's no central authority.
+- *Trustless & verifiable*: Don't have to trust other nodes, any computer with the necessary software can verify the correctness of the blockchain.
+- *Censorship-resistant*: Bad actors cannot prevent valid transactions from being processed.
+- *Irreversible*: Once recorded in the blockchain, transactions are (usually) permanent and immutable.
 
 ---
 [.build-lists: true]
@@ -54,12 +56,39 @@ Invented by *Satoshi Nakamoto* (true identity unknown) for use in Bitcoin.
 
 - A blockchain consists of a series of *blocks*.
 - Each block consists of a series of *transactions*, a hash of the previous block header, and a nonce.
+- The hash of each block must fulfill certain criteria. We will go more into detail later.
 
 ---
 
 ![inline](en-blockchain-overview.pdf)
 
 Simplified illustration of a blockchain
+
+---
+
+# [fit]What is a hash function?
+
+A hash function maps data of arbitrary size to data of fixed size.
+
+The output of a hash function looks random, but is actually deterministic.
+
+```
+SHA256("Facebook") ==
+d41f5b4977ee05c6b61b3b5f054784628f5cd1cbe06a82a5484d1e6de6eefe85
+
+SHA256("Face🅱️ook") ==
+07fd5cce19bc1786c7bc5288c24316be1408ede5ec6fafe7b4bf4cd6a39bde42
+```
+
+---
+
+# [fit]What is a hash function?
+
+A *cryptographic hash function* must also be infeasible to invert.
+
+If `x` and `y` are arbitrary inputs and `h` is a hash function, it should be infeasible to find `h(x) == h(y)` where `x ≠ y`.
+
+Bitcoin uses a *cryptographic hash function* called *SHA-256*.
 
 ---
 [.build-lists: true]
@@ -94,13 +123,13 @@ Each address can own a set of UTXOs. The sum of these UTXOs' values is the addre
 
 ---
 
-# [fit]What about change?
+# [fit]How is change handled?
 
 Suppose Alice wants to send Bob exactly 5 BTC. However, Alice currently has only one UTXO worth 10 BTC. How can Alice send **exactly** the correct amount?
 
 ---
 
-# [fit]What about change?
+# [fit]How is change handled?
 
 *The input is split into two UTXOs.* One of them is refunded back to Alice.
 
@@ -126,38 +155,6 @@ Also used in Ethereum, Litecoin, ZCash, Monero, and other cryptocurrencies!
 
 ---
 
-<br/><br/><br/><br/><br/><br/><br/><br/>
-# [fit]But first, what is
-# [fit]a hash function?
-
----
-
-# [fit]What is a hash function?
-
-A hash function maps data of arbitrary size to data of fixed size.
-
-The output of a hash function looks random, but is actually deterministic.
-
-```
-SHA256("Facebook") ==
-d41f5b4977ee05c6b61b3b5f054784628f5cd1cbe06a82a5484d1e6de6eefe85
-
-SHA256("Face🅱️ook") ==
-07fd5cce19bc1786c7bc5288c24316be1408ede5ec6fafe7b4bf4cd6a39bde42
-```
-
----
-
-# [fit]What is a hash function?
-
-A *cryptographic hash function* must also be infeasible to invert.
-
-If `x` and `y` are arbitrary inputs and `h` is a hash function, it should be infeasible to find `h(x) == h(y)` where `x ≠ y`.
-
-Bitcoin uses a *cryptographic hash function* called *SHA-256*.
-
----
-
 # [fit]What is proof of work?
 
 In order to *mine* a block, miners have to collect transactions and find a block nonce (an arbitrary integer) via brute-force such that *the hash of the block starts with a certain number of zeros*.
@@ -174,7 +171,7 @@ The first transaction in any block is the coinbase transaction. Through this, th
 
 ---
 
-# [fit]Block rewards
+# [fit]What is a block reward?
 
 The block reward was *initially 50 BTC*.[^1]
 
@@ -346,7 +343,7 @@ Smart contracts can be used to back insurance policies, claim assets, crowdfund 
 The more computations a smart contract requires, the more *gas* it uses. Gas prices are expressed in *Gwei* where **1 ether == 10^9 Gwei**.
 Gas prices typically range from 1 Gwei up to 50 Gwei.
 
-A typical transaction costs 21000 gas. Suppose you set the gas price to 5 Gwei. Then, the transaction fee would cost 0.000105 ether.
+A typical transaction costs 21000 gas. Suppose you set the gas price to 5 Gwei. Then, the transaction fee would cost 0.000105 ether—or about $0.04.
 
 Interacting with smart contracts consumes more gas than simple transactions of ether.
 
@@ -356,9 +353,41 @@ Interacting with smart contracts consumes more gas than simple transactions of e
 
 ERC-20 is an Ethereum token standard for smart contracts.
 
-ERC-20 defines a *common interface*—a common set of functions that any ERC-20 compliant contract must implement.
+The ERC-20 standard defines a *common interface*—a common set of functions that any ERC-20 compliant contract must implement.
 
 Anyone interacting with ERC-20 compliant contracts won't have to write custom code for each contract.
+
+---
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+# [fit]What are public
+# [fit]and private keys?
+
+---
+
+# [fit]What are public and private keys?
+
+A public key identifies your wallet—anyone with access to the blockchain can view your activity.
+
+A private key grants the holder the rights to spend the cryptocurrency.
+
+If you lose your private key, **you lose access to your money!**
+
+If someone else knows your private key, **your money will be stolen!**
+
+---
+
+# [fit]Public key vs. public address
+
+A public key can derive many public addresses.
+
+Wallets with support for hierarchical deterministic wallets described in the *BIP-32 standard* support this feature.
+
+Reusing public addresses can compromise your privacy.
+
+---
+
+![inline](key-relations.png)
 
 ---
 
@@ -370,12 +399,12 @@ Anyone interacting with ERC-20 compliant contracts won't have to write custom co
 
 # [fit]How do I store & access my cryptocurrency?
 
-You can access your cryptocurrency through a *wallet*.
+You can access your cryptocurrency through a *wallet*, which stores your private seed and keys.
 
-A wallet stores your private keys.
-The term "wallet" would be misnomer—think of a cryptocurrency wallet as a *keychain* that holds your private keys.
+The term "wallet" is a misnomer—your wallet doesn't store actual cryptocurrency.
+**Think of a cryptocurrency wallet as a keychain that holds your private and public keys.**
 
-All wallets are either cold (offline) or hot (connected to the Internet).
+All wallets are either *cold* (offline) or *hot* (connected to the Internet).
 Cold wallets are more secure than hot wallets.
 
 ---
@@ -411,38 +440,12 @@ Another popular option is *Metamask*. It is available as an extension for the Ch
 
 ---
 
-# [fit]What are public and private keys?
-
-A public key identifies your wallet—anyone with access to the blockchain can view your activity.
-
-A private key grants the holder the rights to spend the cryptocurrency.
-
-If you lose your private key, **you lose access to your money!**
-
-If someone else knows your private key, **your money will be stolen!**
-
----
-
 # [fit]How can I backup my wallet?
 
-When you first use a wallet, it may ask you to write down a mnemonic series of words. **Do that immediately and store it in a secure place!**
+When you first use a web wallet, software wallet, or hardware wallet, it may ask you to write down a mnemonic series of words. **Do that immediately and store it in a secure place!**
 
 If you lose access to your wallet, you can restore it with this series of words.
-Your backup words can derive your seed using the *BIP-39 standard*, which can derive your private keys for all your cryptocurrencies.
-
----
-
-# [fit]Public key vs. public address
-
-A public key can derive many public addresses.
-
-Wallets with support for hierarchical deterministic wallets described in BIP-32 support this feature.
-
-Reusing public addresses can compromise your privacy.
-
----
-
-![inline](key-relations.png)
+Using the *BIP-39 standard*, you can use your backup words to derive your seed, which in turn can derive your private keys for all your cryptocurrencies.
 
 ---
 
