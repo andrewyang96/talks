@@ -26,6 +26,16 @@ theme: Work, 1
 
 ---
 
+# [fit]Before we begin...
+
+**This talk is purely for informational purposes—and is *not* financial advice!**
+
+**All investments, especially cryptocurrency "investments", are subject to market risk!**
+
+**You are *never* guaranteed a return/profit on any investment over any period of time!**
+
+---
+
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 # [fit]What is a blockchain?
 
@@ -76,8 +86,8 @@ The output of a hash function looks random, but is actually deterministic.
 SHA256("Facebook") ==
 d41f5b4977ee05c6b61b3b5f054784628f5cd1cbe06a82a5484d1e6de6eefe85
 
-SHA256("Face🅱️ook") ==
-07fd5cce19bc1786c7bc5288c24316be1408ede5ec6fafe7b4bf4cd6a39bde42
+SHA256("facebook") ==
+3d59f7548e1af2151b64135003ce63c0a484c26b9b8b166a7b1c1805ec34b00a
 ```
 
 ---
@@ -550,6 +560,20 @@ Read for free: [https://github.com/bitcoinbook/bitcoinbook](https://github.com/b
 
 ---
 
+# [fit]Notable crypto people on Twitter
+
+![](twitter.png)
+
+- **Andreas Antonopoulos** [@aantonop](https://twitter.com/aantonop): blockchain and Bitcoin evangelist
+- **Naval Ravikant** [@naval](https://twitter.com/naval): blockchain evangelist
+- **Vitalik Buterin** [@VitalikButerin](https://twitter.com/VitalikButerin): Ethereum co-creator
+- **Joseph Lubin** [@ethereumJoseph](https://twitter.com/ethereumJoseph): Ethereum co-creator and ConsenSys founder
+- **Charlie Lee** [@satoshilite](https://twitter.com/satoshilite): Litecoin creator
+- **Charles Hoskinson** [@IOHK_Charles](https://twitter.com/IOHK_Charles): Cardano creator
+- **Riccardo Spagni** [@fluffypony](https://twitter.com/fluffypony): Monero lead developer
+
+---
+
 # [fit]Additional resources & affiliate links
 
 - Sign up for Coinbase:
@@ -565,3 +589,12 @@ Read for free: [https://github.com/bitcoinbook/bitcoinbook](https://github.com/b
 [https://changenow.io?link_id=51f14cfa38ee10](https://changenow.io?link_id=51f14cfa38ee10)
 - Buy the Ledger Nano S hardware wallet:
 [https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s](https://www.ledgerwallet.com/r/f5ed?path=/products/ledger-nano-s)
+
+---
+
+# [fit]And finally...
+
+![inline](me.jpg)
+
+I write about cryptocurrencies, among other topics.
+Follow me at *[blog.andrewyang.xyz](https://blog.andrewyang.xyz/)*
