@@ -4,6 +4,7 @@ text-emphasis: Lato Light Italic
 theme: Courier, 1
 
 # [fit]Intro to Python 🐍
+# [fit]CS @ Illinois SAIL 2018
 
 ---
 
@@ -25,11 +26,11 @@ theme: Courier, 1
 # Before we start...
 
 - Install Python 3.6
-- Download the zip file: **http://bit.ly/2GPZmAf**
+- Download the zip file: **[http://bit.ly/2GPZmAf](http://bit.ly/2GPZmAf)**
 
 ---
 
-# Go through Python tutorial on TutorialsPoint
+# [fit]Python crash course
 
 ---
 
@@ -54,6 +55,25 @@ def get_random_number():
     Source: https://xkcd.com/221/
     """
     return 4
+```
+
+---
+
+# String interpolation
+
+An alternative to concatenating strings is to use string interpolation.
+
+Python provides the `str.format` method to do so.
+
+```python
+name1 = 'Daniel'
+name2 = 'Sam'
+
+# Using string concatenation
+geah = 'I am ' + name1 + ', I am ' + name2 + ', ' + name2 + ' I am.'
+
+# Using string interpolation
+geah = 'I am {0}, I am {1}, {1} I am.'.format(name1, name2)
 ```
 
 ---
@@ -164,6 +184,51 @@ print(list(enumerate(words)))
 
 # [fit]Before we begin...
 ## [fit]What should a game of Hangman have?
+
+---
+[.build-lists: true]
+
+# Considerations
+
+- How can let the player specify the game’s difficulty?
+- How can I verify that the player has inputted a valid letter?
+- How can I display a word with the unguessed letters censored?
+- How can I keep track of already guessed letters?
+- How can I detect whether the player has won or lost the game?
+
+---
+
+```
+Ask for number of attempts, make sure it is between 1 and 25, inclusive
+Ask for minimum word length, make sure it is between 4 and 16, inclusive [I will explain this later.]
+Open the word list file & select a random word
+Create a set of remaining letters and initialize it to contain the 26 ASCII lowercase character
+
+While there are attempts remaining OR there are unguessed letters in the word remaining
+    Print the word with the unguessed letters censored
+    Ask for the next letter and make it lowercase
+    If the "letter" has multiple characters
+        Notify the player that the "letter" has multiple characters
+    Else if the letter is not an ASCII lowercase character
+        Notify the player that the letter is not an ASCII lowercase character
+    Else if the letter is not in the remaining letter set (i.e. has been guessed before)
+        Notify the player that the letter has been guessed before
+    Else
+        If letter is in the word
+            Notify the player that the letter is in the word
+        Else
+            Decrement attempt counter
+            Notify the player that the letter is not in the word
+        Remove guessed letter from the remaining letter set
+
+Reveal the word
+If the word is solved
+    Notify the player of victory
+Else
+    Notify the player of defeat
+
+Give the player the option to try again
+```
 
 ---
 
